@@ -1,0 +1,241 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    background-position: center;
+   
+}
+/* Header */
+#header {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Sabit pozisyon */
+    top: 0; /* Sayfanın üstünde */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Diğer içeriklerin üzerinde */
+    transition: top 0.3s ease; /* Geçiş efekti */
+}
+
+.header-hidden {
+    top: -100px; /* Sayfanın dışına çıkacak */
+}
+
+/* Diğer stiller devam eder */
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 30px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color:black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #666;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 200px;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 0;
+    opacity: 0;
+    transition: width 0.4s ease, opacity 0.4s ease;
+}
+
+.search-container:hover .search-input,
+.search-input:focus {
+    width: 150px;
+    opacity: 1;
+}
+
+.search-button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #9b51e0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #666;
+}
+
+.profile {
+    position: absolute;
+    top: 1px;
+    right: 45px;
+}
+
+.profile img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: auto; /* Otomatik genişlik */
+    padding: 8px 20px; /* Yeni boyut ve dolgular */
+    border-radius: 20px; /* Kavisli kenarlar */
+    font-size: 16px; /* Yazı tipi boyutu */
+    background-color: #8A2BE2; /* Mor arka plan rengi */
+    color: #fff; /* Beyaz yazı rengi */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Geçiş efektleri */
+}
+
+button[type="submit"]:hover {
+    background-color: #9932CC; /* Morun bir ton daha koyusu */
+    transform: scale(1.1); /* Büyüme efekti */
+}
+
+
+
+#form-feedback {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+}
+
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials a {
+    margin: 0 5px;
+}
+
+.footer-socials img {
+    width: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a:hover img {
+    transform: scale(1.2);
+}

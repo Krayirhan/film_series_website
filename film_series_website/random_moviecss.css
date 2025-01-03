@@ -1,0 +1,189 @@
+/* Genel stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    background-position: center;
+}
+
+/* Header */
+#header {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Sabit pozisyon */
+    top: 0; /* Sayfanın üstünde */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Diğer içeriklerin üzerinde */
+    transition: top 0.3s ease; /* Geçiş efekti */
+}
+
+.header-hidden {
+    top: -100px; /* Sayfanın dışına çıkacak */
+}
+
+/* Menu */
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 30px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.menu a:hover {
+    background-color: #333; /* Zemin rengini değiştirme */
+}
+
+/* Ana Başlık */
+h1 {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+/* Film kartı stilleri */
+.productions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Daha iyi aralama */
+}
+
+.production-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%; /* % kullanarak esnek genişlik */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Geçiş efekti */
+    text-decoration: none; /* Alt çizgiyi kaldırma */
+    color: white; /* Yazı rengi siyah */
+    text-align: center;
+}
+.production-card:hover {
+    transform: translateY(-5px); /* Hafif yukarı kaydırma */
+    background-color: transparent; /* Arkaplan rengini temizleme */
+    color: inherit; /* Yazı rengini miras alma */
+}
+
+
+.production-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.production-card .film-details {
+    margin-top: 10px;
+}
+
+.production-card .film-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.production-card .film-description {
+    font-size: 14px;
+    color: #666;
+}
+.production-card:focus, /* Odaklandığında */
+.production-card:active { /* Tıklandığında */
+    outline: none; /* Kenarlık kaldırma */
+}
+/* Medya sorguları eklenebilir */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; /* Küçültüldü */
+    height: 60px; /* Küçültüldü */
+    background-color: transparent;
+    border: 3px solid transparent; /* Kenarlık ilk başta görünmeyecek */
+    border-radius: 50%; /* Yuvarlak şekil vermek için */
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s; /* Geçiş efektleri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden; 
+    opacity: 0; 
+}
+
+.play-button::before {
+    content: '\25B6'; 
+    font-size: 30px; 
+    color: #fff; 
+}
+
+.production-card:hover .play-button { 
+    opacity: 1;
+    border-color: #9b51e0; 
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+.production-card:hover .play-button { 
+    opacity: 1;
+    border-color: #9b51e0; 
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.info-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 2; /* Blurun arkasında */
+}
+.production-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}

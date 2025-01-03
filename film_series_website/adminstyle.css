@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    background-position: center;
+   
+}
+
+/* Header */
+#header {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Sabit pozisyon */
+    top: 0; /* Sayfanın üstünde */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Diğer içeriklerin üzerinde */
+    transition: top 0.3s ease; /* Geçiş efekti */
+}
+
+.header-hidden {
+    top: -100px; /* Sayfanın dışına çıkacak */
+}
+
+/* Diğer stiller devam eder */
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 30px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color:black;
+}
+
+
+  .admin-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-forms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admin-form {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 300px;
+    background-color: #000000;
+}
+
+.admin-form label,
+.admin-form input,
+.admin-form select,
+.admin-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.admin-form input,
+.admin-form select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.admin-form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.admin-form button:hover {
+    background-color: #555;
+}
+
+#adm_img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 10px;
+}
