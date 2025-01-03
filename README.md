@@ -1,1 +1,19 @@
-# film_series_website
+# Film and series website php
+
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(5).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(1).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(12).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(6).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(3).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(2).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(4).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(8).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(7).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(9).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(10).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(11).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(13).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(14).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(15).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(16).jpeg)
+![image](https://github.com/Krayirhan/film_series_website/blob/main/film_and_series_website/websiteimg/1%20(17).jpeg)
