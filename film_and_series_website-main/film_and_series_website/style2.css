@@ -1,0 +1,678 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 450px;
+        margin-left: 0px;
+        margin-top: 80px;
+        padding: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 4500px;
+        margin-left: -490px;
+        max-width: 1300px;
+        padding:   0px;
+        background-color: #201f1f;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+
+
+    /* Header */
+    #header {
+        background-color: black;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+        transition: top 0.3s ease;
+    }
+    
+    .header-hidden {
+        top: -100px;
+    }
+    /* Diğer stiller devam eder */
+
+
+    .menu-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin: 0 10px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .menu a:hover {
+        background-color:black;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #666;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 120px;
+    }
+
+    .search-input {
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+        width: 0;
+        opacity: 0;
+        transition: width 0.4s ease, opacity 0.4s ease;
+    }
+
+    .search-container:hover .search-input,
+    .search-input:focus {
+        width: 150px;
+        opacity: 1;
+    }
+
+    .search-button {
+        padding: 5px 10px;
+        margin-left: 5px;
+        border: none;
+        border-radius: 3px;
+        background-color: #9b51e0;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .search-button:hover {
+        background-color: #666;
+    }
+
+
+    .upload-container {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 120px;
+    }
+
+    .upload-input {
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+        width: 0;
+        opacity: 0;
+        transition: width 0.4s ease, opacity 0.4s ease;
+    }
+
+    .upload-container:hover .upload-input {
+        width: 150px;
+        opacity: 1;
+    }
+
+    .upload-button {
+        padding: 5px 10px;
+        margin-left: 5px;
+        border: none;
+        border-radius: 3px;
+        background-color:#9b51e0;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .upload-button:hover {
+        background-color: #666;
+    }
+
+    .profile {
+        position: absolute;
+        top: 1px;
+        right: 45px;
+    }
+
+    .profile img {
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .header img {
+        margin : center;
+        margin-top: 70px;
+        margin-left: 80px;
+        height: 360px;
+        width: 640px;
+        border-radius: 5px;
+    }
+    .header {
+        height: 800px;
+        width: 800px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+
+    .header .isim h2 {
+        margin: -90px;
+        margin-top: 40px;
+        margin-left: 30px;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: left; 
+        font-weight: bold; 
+    }
+
+    .header .buton{
+        margin-top: 90px;
+        text-align: left; 
+        margin-left: 10px;
+        margin-bottom: 5px;
+        padding: 20px; 
+        color: #ffffff; 
+    }
+    #video-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #video-container video {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    /* Kapatma düğmesi için stil */
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .video {
+        width: 100%; /* Genişlik 100% olsun */
+        max-width: 1100px; /* Maksimum genişlik 1100px olsun */
+        margin: 0 auto; /* Ortalanmış */
+        margin-bottom: 100px;
+    }
+
+    .video video {
+        width: 100%; /* Video genişliği 100% olsun */
+        height: auto; /* Yüksekliği otomatik olarak ayarlanacak şekilde */
+        border-radius: 5px; /* İsteğe bağlı: Kenar yuvarlaklığı ekleyebilirsiniz */
+    }
+        
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .sidebar {
+        margin-top: -250px;
+        margin-left: 5px;
+        width: 25%;
+        float: right; /* Sağa yasla */
+        background-color: #2e2c2c;
+        padding: 20px;
+        border-radius: 5px;
+        color: #fff;
+        margin-right: 30px; /* Sağdan boşluk bırak */
+    }
+
+
+    .overview {
+        margin-top: -200px;
+        width: 25%; /* Dizi aÃ§Ä±klamasÄ±nÄ±n geniÅŸliÄŸini ayarlayÄ±n */
+        margin-right: 20px;
+        float: left; /* Sola yasla */
+        color: hsl(0, 0%, 100%); /* Metin rengini beyaz yapÄ±n */
+        text-align: left; /* Metni sola hizalayÄ±n */
+        font-size: 18px; /* YazÄ± tipi boyutunu ayarlayÄ±n */
+        font-weight: normal; /* YazÄ± tipi kalÄ±nlÄ±ÄŸÄ±nÄ± varsayÄ±lan yapÄ±n */
+        padding: 0 15px; /* AÃ§Ä±klamanÄ±n kenarlarÄ±ndan boÅŸluk ekleyin */
+        margin-left: 15px;
+    }
+    .season-selectbox select {
+        width: 130px; /* Seçim kutusunu dolduracak şekilde genişletin */
+        float: left; /* Sola yasla */
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 30px;
+        height: 45px;
+        border: none; /* Seçim kutusunun kenarlığını kaldırın */
+        background-color: transparent; /* Seçim kutusunun arka planını şeffaf yapın */
+        color: #fff; /* Metin rengini beyaz yapın */
+        font-size: 16px; /* Yazı tipi boyutunu ayarlayın */
+        font-weight: bold; /* Yazı tipi kalınlığını belirleyin */
+        outline: none; /* Odak çerçevesini kaldırın */
+        cursor: pointer; /* İmleci el göstergesi olarak ayarlayın */
+    }
+
+    /* Seçenekleri beyaz yapmak için */
+    .season-selectbox option {
+        color: #fff;
+        background-color: #000;
+        font-size: 16px; /* Seçeneklerin yazı tipi boyutunu ayarlayın */
+        font-weight: bold; /* Seçeneklerin yazı tipi kalınlığını belirleyin */
+    }
+
+
+    .episodes {
+        margin-top: 230px;
+        margin-left: 30px;
+        margin-bottom: 100px;
+        width: 65%;
+    }
+
+    .episode-item {
+        width: calc(50% - 10px); /* Yarısını kaplayacak şekilde */
+        background-color: #2e2c2c;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        position: relative; /* Mutlaka ekleyin */
+        display: inline-block; /* Yanyana gelmelerini sağlar */
+        vertical-align: top; /* İçeriklerin üstte hizalanmasını sağlar */
+    }
+
+    .episodes .episode-item:nth-child(odd) {
+        margin-right: 15px; /* Her iki elemanın arasına boşluk ekler */
+    }
+
+    .episodes .episode-item:nth-child(even) {
+        clear: both; /* Her iki elemanın altına yeni bir satıra geçer */
+    }
+
+    .episode-item a {
+        text-decoration: none; /* Altı çizgili olmasını engeller */
+        color: inherit; /* Varsayılan renk kullanılır */
+    }
+
+    .episode-content {
+        display: flex;
+    }
+
+    .episode-content img {
+        width: 120px;
+        height: auto;
+        border-radius: 5px 0 0 5px; /* Soldaki resmin köşeleri yuvarlak yapmak için */
+    }
+
+    .episode-details {
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+    .episode-details .episode {
+        margin: 0;
+        font-weight: bold;
+        font-size: 14px; 
+        color: #dbd6d6; 
+    }
+
+    .episode-details .name {
+        margin-top: 5px;
+        font-size: 16px; 
+        color: #ffffff; 
+    }
+
+    .episode-details .date {
+        margin-top: 5px;
+        font-size: 12px; 
+        color: #b4afaf; 
+    }
+
+    .watched-episode {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin-top: -30px;
+        background-color: rgb(177, 140, 17); /* İşaretli olduğunda buraya istediğiniz stil ekleyebilirsiniz */
+    }
+
+
+    .comment-form label {
+        display: block;
+        color: #fff;
+        margin-bottom: 10px;
+        }
+        
+        .comment-form input[type="text"],
+        .comment-form select,
+        .comment-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        }
+        
+        .comment-form textarea {
+        height: 100px;
+        }
+        
+        .comment-form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #45a049;
+        color: white;
+        cursor: pointer;
+        }
+        
+        .comment-form button:hover {
+        background-color: #45a049;
+        }
+        
+        .previous-comments {
+        background-color:#2e2c2c;
+        padding: 20px;
+        border-radius: 5px;
+        color: #fff;
+        }
+        
+        .previous-comments .comment {
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #000;
+        }
+        
+        .previous-comments .comment p {
+        margin: 5px 0;
+        }
+        
+        .previous-comments .comment strong {
+        color: #45a049;
+        }
+        
+        .comment-form {
+        
+        margin-top: 250px;
+        background-color: #2e2c2c;
+        padding: 20px;
+        border-radius: 5px;
+        color: #fff;
+        margin-bottom: 20px;
+        }
+
+
+    .profile {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .profile-card {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        padding: 10px 20px;
+        background: #fff;
+        width: 200px;
+        box-sizing: 0 5px 25px rgb(255, 0, 0);
+        border-radius: 15px;
+        transition: 0.5s;
+        opacity: 1;
+        z-index: 1;
+    }
+    .profile-card h4{
+        text-align: center;
+        color: #8400ff;
+    }
+
+    .profile-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .profile-card ul li {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .profile-card ul li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .profile-card ul li a:hover {
+        background-color: #f0f0f0;
+    }
+
+
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .modal p{
+        color: #222;
+    }
+    .modal h2{
+        color: #222;
+    }
+    .modal label{
+        color: #ffffff;
+    }
+
+    .modal button{
+        width: 30%;
+        height: 60px;
+        margin: 10px auto;
+        justify-content: center;
+        display: block;
+        color: #fff;
+        background: #573b8a;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    }
+    .modal button:hover{
+        background: #6d44b8;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .m
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .edit-icon {
+        margin-left: 10px;
+        cursor: pointer;
+        width: 3%;
+    }
+
+
+
+
+    /* Yeni video kutusu stilleri */
+    .video-popup {
+        display: none; /* Başlangıçta görünmez */
+        position: fixed;
+        z-index: 1000;
+        left: 50%; /* Sayfanın yatay ortasına hizala */
+        top: 50%; /* Sayfanın dikey ortasına hizala */
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        max-width: 80%; /* En fazla 80% genişlikte olacak */
+        max-height: 80%; /* En fazla 80% yükseklikte olacak */
+        overflow: auto; /* İçeriği aşan kısımlar için kaydırma çubuğu ekle */
+    }
+
+    .video-popup video {
+        width: 100%; /* Video genişliği 100% olsun */
+        height: auto; /* Yüksekliği otomatik olarak ayarlanacak şekilde */
+        border-radius: 5px; /* Kenarları yuvarlak yap */
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #888;
+    }
+
+    .close-btn:hover {
+        color: #555;
+    }
+
+
+    
+.play_button, .back-button {
+    padding: 10px 20px;
+    background-color: #9b51e0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play_button:hover, .back-button:hover {
+    background-color: #7a3dbb;
+    transform: scale(1.1);
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 30px;
+}
+
+#video-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#video-container video {
+    max-width: 90%;
+    max-height: 90%;
+}
+
